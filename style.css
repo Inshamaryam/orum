@@ -1,0 +1,771 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #203354;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    margin-right:30px;
+  
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+    margin: 0 auto;
+    color:white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .swiper-container {
+        height: 60vh;
+    }
+}
+
+/* CEO Section */
+#ceo {
+    padding: 70px 0;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.ceo-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ceo-image {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.ceo-text {
+    flex: 1;
+}
+
+.ceo-text h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.ceo-text p {
+    color: #666;
+    font-size: 18px;
+}
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section#overview {
+    background-color:lightblue;
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+   color: darkblue;
+}
+
+.overview-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease, transform 1s ease;
+  
+}
+
+/* Animation Class */
+.scale-visible {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.overview-image {
+    width: 50%;
+    max-width: 600px;
+}
+
+.text-content {
+    width: 50%;
+    max-width: 600px;
+}
+
+
+
+/* Mission Section */
+#mission {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#mission h1 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#mission img {
+    width: 50%;
+    max-width: 900px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 0px;
+}
+
+/* Mission Boxes */
+.mission-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  
+}
+
+.mission-box {
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.mission-box h3 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.mission-box p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-box {
+        max-width: 90%;
+    }
+
+    .mission-box h3 {
+        font-size: 20px;
+    }
+
+    .mission-box p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+.values-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.values-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Value Box Styles */
+.value-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    animation: fadeInUp 1.5s ease-out;
+    position: relative;
+}
+
+/* Image in Value Box */
+.value-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Value Box Heading */
+.value-box h3 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Value Box Paragraph */
+.value-box p {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .values-section h2 {
+        font-size: 28px;
+    }
+
+    .value-box h3 {
+        font-size: 24px;
+    }
+
+    .value-box p {
+        font-size: 16px;
+    }
+
+    .value-box img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .values-section h2 {
+        font-size: 24px;
+    }
+
+    .value-box h3 {
+        font-size: 20px;
+    }
+
+    .value-box p {
+        font-size: 14px;
+    }
+
+    .value-box img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+padding:30px;
+/* Products Section */
+.products-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+}
+padding:0px;
+#video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box1 {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px; /* Adjust width as needed */
+    max-width: 100%; /* Ensure it doesn't overflow the viewport */
+    height: 200px; /* Adjust height as needed */
+}
+
+.box1 iframe {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    display: block;
+    border: none;
+}
+
+.box1 .content {
+    padding: 10px;
+}
+
+.box1 h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.box1 p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+
+.products-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #004080;
+    text-transform: uppercase;
+}
+
+.product {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideIn 1s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.read-more-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #002850;
+}
+
+.product-details {
+    display: none;
+    margin-top: 20px;
+    color: #666;
+    text-align: left;
+    max-width: 700px;
+    line-height: 1.6;
+    animation: fadeInContent 1s ease-out;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#reliable-solutions p {
+    padding: 40px;
+    font-size: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInContent {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Clients Section */
+c
+.client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  padding:10;
+  
+}
+
+.client-logos img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  color:white;
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Queries */
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #hero {
+        padding: 300px 20px;
+    }
+
+    .overview-content,
+    .mission-content,
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 10px;
+    }
+
+    .main-nav ul li a {
+        font-size: 24px;
+    }
+
+    #hero {
+        padding: 250px 20px;
+    }
+
+    .ceo-content,
+    .mission-content,
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ceo-image,
+    .overview-image,
+    .mission-image,
+    .client-logos img {
+        max-width: 70%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0 10px;
+    }
+
+    .site-header {
+        padding: 20px 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul li a {
+        font-size: 20px;
+    }
+
+    #hero {
+        padding: 200px 20px;
+    }
+
+    .ceo-image,
+    .overview-image,
+    .mission-image,
+    .client-logos img {
+        max-width: 60%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    .site-header {
+        padding: 10px 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul li a {
+        font-size: 16px;
+    }
+
+    #hero {
+        padding: 150px 20px;
+    }
+
+    .ceo-image,
+    .overview-image,
+    .mission-image,
+    .client-logos img {
+        max-width: 50%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
